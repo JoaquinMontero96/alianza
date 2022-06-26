@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Club Atlético de la Juventud Alianza | Asociate</title>
+	<link rel="icon" href="../images/favicon.png">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="container-socios">
+
+	<!--ENCABEZADO (START)-->
+	<header class="header">
+
+		<!--Título de la página-->
+		<h1 class="header__title" id="h1">Club Atlético de la Juventud Alianza | Sitio Oficial</h1>
+
+		<!--Redes Sociales (start)-->
+		<div class="redes-sociales">
+			<a class="redes-sociales__link" href="https://www.facebook.com/AtleticoAlianzaSJ" target="_blank">
+				<img class="redes-sociales__icon" src="../images/logo-facebook-bordo.png" alt="Logo de Facebook">
+			</a>
+			<a class="redes-sociales__link" href="https://www.instagram.com/atleticoalianza/" target="_blank">
+				<img class="redes-sociales__icon" src="../images/logo-instagram-bordo.png" alt="Logo de Instagram">
+			</a>
+			<a class="redes-sociales__link" href="https://www.youtube.com" target="_blank">
+				<img class="redes-sociales__icon" src="../images/logo-youtube-bordo.png" alt="Logo de YouTube">
+			</a>
+			<a class="redes-sociales__link" href="https://wa.me/5492645736450" target="_blank">
+				<img class="redes-sociales__icon" src="../images/logo-whatsapp-bordo.png" alt="Logo de Whatsapp">
+			</a>
+		</div>
+		<!--Redes Sociales (end)-->
+
+		</header>
+		<!--ENCABEZADO (END)-->
+
+	<!--Barra de navegación (start)-->
+		<nav class="nav">
+			<a class="nav__link" href="../index.html">
+				<img class="nav__logo" src="../images/logo-alianza.png" alt="Logo del Club Atlético de la Juventud Alianza">
+			</a>
+			<ul class="menu">
+				<li class="menu__item">
+					<a class="menu__link" href="historia.html">HISTORIA</a>
+				</li>
+				<hr>
+				<li class="menu__item">
+					<a class="menu__link" href="deportes.html">DEPORTES</a>
+				</li>
+				<hr>
+				<li class="menu__item">
+					<a class="menu__link" href="club.html">EL CLUB</a>
+				</li>
+				<hr>
+				<li class="menu__item">
+					<a class="menu__link" href="productos.html">PRODUCTOS</a>
+				</li>
+			</ul>
+			<a class="btn" href="socio.html">HACETE SOCIO</a>
+			<img class="nav__decoration" src="../images/decoration.jpg" alt="">
+		</nav>
+
+		<!--Barra de navegación (end)-->
+
+
+		<!--Hero (start)-->
+		<div class="hero">
+			<video class="hero__media" src="../videos/vid-01.mp4" muted autoplay loop></video>
+			<h2 class="hero__txt">EL CLUB ES DE LOS <span>SOCIOS</span></h2>
+		</div>
+		<!--Hero (end)-->
+
+	<!--CONTENIDO PRINCIPAL (START)-->
+	<main class="main">
+		<!--Formulario de contacto (start)-->
+		<section class="socio">
+			<img class="socio__decoration" src="../images/decoration.jpg" alt="">
+			<form action="" class="formulario">
+				<fieldset class="formulario-campo">
+					<legend class="formulario-campo__titulo">DATOS PERSONALES</legend>
+					<label class="formulario-campo__label" for="nombre">Nombre:</label>
+					<input class="formulario-campo__input" type="text" id="nombre" required>
+					<label class="formulario-campo__label" for="apellido">Apellido:</label>
+					<input class="formulario-campo__input" type="text" id="apellido" required>
+					<label class="formulario-campo__label" for="dni">N° DNI (Sin puntos):</label>
+					<input class="formulario-campo__input" type="number" id="dni" required>
+					<label class="formulario-campo__label" for="nacimiento">Fecha de nacimiento:</label>
+					<input class="formulario-campo__input" type="date" id="nacimiento" required>
+					<fieldset class="formulario-campo">
+						<legend class="formulario-campo__titulo">Sexo:</legend>
+						<label class="formulario-campo__label" for="hombre">Hombre</label>
+						<input class="formulario-campo__input" type="radio" id="hombre" name="sexo" required>
+						<label class="formulario-campo__label" for="mujer">Mujer</label>
+						<input class="formulario-campo__input" type="radio" id="mujer" name="sexo" required>
+						<label class="formulario-campo__label" for="no-binario">No binario</label>
+						<input class="formulario-campo__input" type="radio" id="no-binario" name="sexo" required>
+					</fieldset>
+				</fieldset>
+				<fieldset class="formulario-campo">
+					<legend class="formulario-campo__titulo">Datos de contacto</legend>
+					<label class="formulario-campo__label" for="telefono">Teléfono:</label>
+					<input class="formulario-campo__input" type="number" id="telefono" required>
+					<label class="formulario-campo__label" for="email">Email:</label>
+					<input class="formulario-campo__input" type="email" id="email" required>
+					<label class="formulario-campo__label" for="direccion">Dirección:</label>
+					<input class="formulario-campo__input" type="text" id="direccion" required>
+					<label class="formulario-campo__label" for="ciudad">Seleccione su ciudad:</label>
+					<select class="formulario-campo__select" name="" id="ciudad" required>
+						<option class="formulario-campo__option" value="capital">Capital</option>
+						<option class="formulario-campo__option" value="chimbas">Chimbas</option>
+						<option class="formulario-campo__option" value="rivadavia">Rivadavia</option>
+						<option class="formulario-campo__option" value="rawson">Rawson</option>
+						<option class="formulario-campo__option" value="santalucia">Santa Lucía</option>
+					</select>
+				</fieldset>
+				<fieldset class="formulario-campo">
+					<legend class="formulario-campo__titulo">Recibir notificaciones</legend>
+					<label class="formulario-campo__label" for="descuentos">Descuentos de socios</label>
+					<input class="formulario-campo__input" type="checkbox" id="descuentos">
+					<label class="formulario-campo__label" for="resultados">Resultados</label>
+					<input class="formulario-campo__input" type="checkbox" id="resultados">
+					<label class="formulario-campo__label" for="ofertas">Ofertas</label>
+					<input class="formulario-campo__input" type="checkbox" id="ofertas">
+				</fieldset>
+				<input class="btn--buy" type="submit" value="ENVIAR SOLICITUD">
+			</form>
+			<img class="socio__decoration" src="../images/decoration.jpg" alt="">
+		</section>
+		<!--Formulario de contacto (end)-->
+
+	</main>
+	<!--CONTENIDO PRINCIPAL (END)-->
+
+	<!--PIE DE PÁGINA (START)-->
+<footer class="footer">
+		<!--Títulos obtenidos (start)-->
+		<div class="campeonatos">
+			<div class="torneo">
+				<h6 class="torneo__title">TORNEOS REGIONALES</h6>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1975</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1985</figcaption>
+			</div>
+			<div class="torneo torneo--xl">
+				<h6 class="torneo__title">TORNEOS LOCALES</h6>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1922</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1923</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1925</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1929</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1934</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1935</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1936</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1945</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1946</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1950</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1952</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1953</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1961</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1974</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1981</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1982</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1984</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1985</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1986</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1987</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1988</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">2010</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">2016</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">2021</figcaption>
+				</figure>
+			</div>
+			<div class="torneo">
+				<h6 class="torneo__title">TORNEOS INICIACIÓN DE LA LIGA SANJUANINA DE FÚTBOL</h6>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1975</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1985</figcaption>
+				</figure>
+				<figure class="trofeo">
+					<img class="trofeo__img" src="../images/trofeo.png" alt="Logo de trofeo">
+					<figcaption class="trofeo__txt">1999</figcaption>
+				</figure>
+			</div>
+		</div>
+		<!--Títulos obtenidos (end)-->
+
+		<!--Sponsors (start)-->
+		<div class="sponsors">
+			<img class="sponsors__img" src="../images/sponsors/chevrolet.png" alt="Sponsors">
+			<img class="sponsors__img" src="../images/sponsors/prisma.png" alt="Sponsors">
+			<img class="sponsors__img" src="../images/sponsors/santa-lucia.png" alt="Sponsors">
+			<img class="sponsors__img" src="../images/sponsors/sj.png" alt="Sponsors">
+			<img class="sponsors__img" src="../images/sponsors/lapetta.png" alt="Sponsors">
+			<img class="sponsors__img" src="../images/sponsors/sep.png" alt="Sponsors">
+		</div>
+		<!--Sponsors (end)-->
+		
+		<!--Redes Sociales (start)-->
+		<div class="redes-sociales">
+			<a class="redes-sociales__link" href="https://www.facebook.com/AtleticoAlianzaSJ" target="_blank">
+				<img class="redes-sociales__icon" src="../images/logo-facebook.png" alt="Logo de Facebook">
+			</a>
+			<a class="redes-sociales__link" href="https://www.instagram.com/atleticoalianza/" target="_blank">
+				<img class="redes-sociales__icon" src="../images/logo-instagram.png" alt="Logo de Instagram">
+			</a>
+			<a class="redes-sociales__link" href="https://www.youtube.com" target="_blank">
+				<img class="redes-sociales__icon" src="../images/logo-youtube.png" alt="Logo de YouTube">
+			</a>
+			<a class="redes-sociales__link" href="https://wa.me/5492645736450" target="_blank">
+				<img class="redes-sociales__icon" src="../images/logo-whatsapp.png" alt="Logo de Whatsapp">
+			</a>
+		</div>
+		<!--Redes Sociales (end)-->
+
+		<!--Info & copyrights (start)-->
+		<div class="footer-info">
+			<p class="footer-info__txt">AV. HIPÓLITO YRIGOYEN 2145 ESTE | SANTA LUCÍA - SAN JUAN | info@juventudalianza.com.ar | 264-5736450</p>
+			<p class="footer-info__txt">&copy 2022 - Joaquín Montero | Todos los derechos reservados</p>
+		</div>
+		<!--Info & copyrights (end)-->
+		<a class="return-button" href="#h1">
+			<img class="return-button__img" src="../images/arrow.png" alt="">
+		</a>
+	</footer>
+	<!--PIE DE PÁGINA (END)-->
+	</div>
+</body>
+</html>
