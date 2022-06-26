@@ -83,11 +83,15 @@ h4{
 			transition: .4s ease;
 		}
 
+		.redes-sociales__icon:hover{
+			transform: scale(1.1);
+		}
+
 /*=======================NAV=======================*/
 
 .nav{
 	grid-area: nav;
-	background: #8e2745;
+	background: linear-gradient(105deg, #98354c 0, #8e2645 50%, #84143f 100%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -103,6 +107,10 @@ h4{
 			height: auto;
 			transition: .4s ease;
 			filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+		}
+
+		.nav__logo:hover{
+			transform: scale(1.03);
 		}
 
 	.menu{
@@ -127,6 +135,11 @@ h4{
 				transition: .4s;
 			}
 
+			.menu__link:hover{
+				color: #66BCDE;
+				background-size: 100% 2px;
+			}
+
 	.btn{
 		color: #fff;
 		font-size: 2.2rem;
@@ -135,6 +148,10 @@ h4{
 		padding: .5rem .8rem;
 		margin: .8rem;
 		transition: .4s ease;
+	}
+
+	.btn:hover{
+		background: #66BCDE;
 	}
 
 	.nav__decoration{
@@ -158,7 +175,7 @@ h4{
 		
 .footer{
 	grid-area: footer;
-	background: #66BCDE;
+	background: linear-gradient(105deg, #79c8e6 0, #65bcde 50%, #4fb1d6 100%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -226,7 +243,12 @@ h4{
 			bottom: 2%;
 			right: 2%;
 			opacity: 50%;
-			transition: transform 1s ease;
+			transition: transform .4s ease;
+		}
+
+		.return-button__img:hover{
+			opacity: 100%;
+			transform: translateY(-5px);
 		}
 
 /*=======================INDEX=======================*/
@@ -421,6 +443,13 @@ h4{
 			margin: .8rem;
 			transition: .4s ease;
 		}
+
+		.btn--black:hover{
+			cursor: pointer;
+			background: #66BCDE;
+			color: #fff;
+		}
+
 
 /*=======================HISTORIA=======================*/
 
@@ -723,6 +752,13 @@ h4{
 			margin: .8rem;
 			transition: .4s ease;
 		}
+
+		.btn--buy:hover{
+			cursor: pointer;
+			background: #66BCDE;
+			color: #fff;
+		}
+
 
 /*=======================SOCIOS=======================*/
 

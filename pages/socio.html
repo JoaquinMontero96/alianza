@@ -6,6 +6,7 @@
 	<title>Club Atlético de la Juventud Alianza | Asociate</title>
 	<link rel="icon" href="../images/favicon.png">
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/animate.css">
 </head>
 <body>
 	<div class="container-socios">
@@ -77,7 +78,7 @@
 		<!--Formulario de contacto (start)-->
 		<section class="socio">
 			<img class="socio__decoration" src="../images/decoration.jpg" alt="">
-			<form action="" class="formulario">
+			<form action="" class="formulario wow fadeInUp">
 				<fieldset class="formulario-campo">
 					<legend class="formulario-campo__titulo">DATOS PERSONALES</legend>
 					<label class="formulario-campo__label" for="nombre">Nombre:</label>
@@ -304,5 +305,9 @@
 	</footer>
 	<!--PIE DE PÁGINA (END)-->
 	</div>
+	<script src="../scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

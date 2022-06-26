@@ -6,6 +6,7 @@
 	<title>Club Atlético de la Juventud Alianza | Deportes</title>
 	<link rel="icon" href="../images/favicon.png">
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/animate.css">
 </head>
 <body>
 	<div class="container-deportes">
@@ -76,14 +77,14 @@
 			<!--Deporte 1 (start)-->
 			<section class="deporte">
 				<div class="deporte-encabezado">
-					<h3 class="deporte-encabezado__title">FÚTBOL PROFESIONAL</h3>
+					<h3 class="deporte-encabezado__title wow fadeInUp">FÚTBOL PROFESIONAL</h3>
 					<h4 class="deporte-encabezado__division">PRIMERA DIVISIÓN</h4>
 					<h5 class="deporte-encabezado__torneo">Liga Sanjuanina de Fútbol</h5>
 				</div>
 
 				<!--Tabla de posiciones (start)-->
 				<article class="posiciones">
-					<h3 class="posiciones__title">POSICIONES</h3>
+					<h3 class="posiciones__title wow fadeInUp">POSICIONES</h3>
 					<table class="posiciones__tabla">
 						<tr>
 							<th>Pos</th>
@@ -223,7 +224,7 @@
 
 				<!--Fixture (start)-->
 				<article class="fixture">
-					<h3 class="fixture__title">FIXTURE</h3>
+					<h3 class="fixture__title wow fadeInUp">FIXTURE</h3>
 					<table class="fixture__tabla">
 						<tr>
 							<th>Dia</th>
@@ -369,7 +370,7 @@
 
 					<!--Sección de últimos resultados (start)-->
 			<div class="aside">
-				<section class="clash">
+				<section class="clash wow fadeInUp">
 					<h4 class="clash__title">ÚLTIMOS RESULTADOS</h4>
 					<article class="clash-torneo">
 						<div class="clash-torneo__div">
@@ -391,7 +392,7 @@
 				<!--Sección de últimos resultados (end)-->
 
 				<!--Sección de próximas fechas (start)-->
-				<section class="clash">
+				<section class="clash wow fadeInUp">
 					<h4 class="clash__title">PRÓXIMOS PARTIDOS</h4>
 					<article class="clash-torneo">
 						<div class="clash-torneo__div">
@@ -584,5 +585,9 @@
 		</footer>
 		<!--PIE DE PÁGINA (END)-->
 	</div>
+	<script src="../scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
