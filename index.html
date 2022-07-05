@@ -37,29 +37,38 @@
 		<!--ENCABEZADO (END)-->
 
 		<!--Barra de navegación (start)-->
-		<nav class="nav">
-				<a class="nav__link" href="index.html">
-					<img class="nav__logo" src="images/logo-alianza.png" alt="Logo del Club Atlético de la Juventud Alianza">
-				</a>
-				<ul class="menu">
-					<li class="menu__item">
-						<a class="menu__link" href="pages/historia.html">HISTORIA</a>
-					</li>
-					<hr>
-					<li class="menu__item">
-						<a class="menu__link" href="pages/deportes.html">DEPORTES</a>
-					</li>
-					<hr>
-					<li class="menu__item">
-						<a class="menu__link" href="pages/club.html">EL CLUB</a>
-					</li>
-					<hr>
-					<li class="menu__item">
-						<a class="menu__link" href="pages/productos.html">PRODUCTOS</a>
-					</li>
-				</ul>
-				<a class="btn" href="pages/socio.html">HACETE SOCIO</a>
-				<img class="nav__decoration" src="images/decoration.jpg" alt="">
+		<nav class="nav navbar navbar-expand-lg">
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <a class="navbar-brand" href="index.html">
+		    	<img class="nav__logo" src="images/logo-alianza.png" alt="Logo del Club Atlético de la Juventud Alianza">
+			</a>
+		    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+		        <li class="nav-item">
+		          <a class="menu__link nav-link" aria-current="page" href="pages/historia.html">HISTORIA</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="menu__link nav-link" href="pages/deportes.html">DEPORTES</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="menu__link nav-link" href="pages/club.html">EL CLUB</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="menu__link nav-link" href="pages/productos.html">PRODUCTOS</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="menu__link nav-link" href="pages/socio.html">ASOCIATE</a>
+		        </li>
+		      </ul>
+		      <form class="d-flex" role="search">
+		        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+		        <button class="btn" type="submit">Buscar</button>
+		      </form>
+		    </div>
+		  </div>
 		</nav>
 		<!--Barra de navegación (end)-->
 
@@ -210,7 +219,7 @@
 			<figure class="camiseta">
 				<figcaption class="camiseta__txt">NUEVA CAMISETA OFICIAL DE FÚTBOL 2022</figcaption>
 				<img class="camiseta__icon" src="images/camiseta-icon.png" alt="">
-				<a class="btn--black">COMPRAR</a>
+				<a class="boton--black">COMPRAR</a>
 			</figure>
 		</section>
 		<!--Compra de camiseta oficial (end)-->
