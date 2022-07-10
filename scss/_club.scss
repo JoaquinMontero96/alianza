@@ -1,0 +1,77 @@
+//club
+
+.container-club{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"header"
+	"nav"
+	"hero"
+	"main"
+	"footer"
+	;
+}
+
+	.club{
+		display: grid;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 5rem;
+	}
+
+		.club-articulo{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+			.club-articulo__title{
+				padding: 1rem;
+				font-size: 2.5rem;
+				width: 100%;
+			}
+
+			.club-articulo__txt{
+				font-size: 1.6rem;
+				text-align: justify;
+				padding: 2rem;
+				color: #3B3B3B;
+			}
+
+			.club-articulo__ul{
+				list-style: square;
+			}
+
+				.club-articulo__li{
+					font-size: 1.6rem;
+					text-align: justify;
+					padding: 2rem;
+					color: #3B3B3B;
+				}
+
+			.club-articulo__tabla{
+				text-align: center;
+				font-size: 1.4rem;
+				border: solid 1px black;
+				border-collapse: collapse;
+			}
+
+				.club-articulo__tabla tr{
+					padding: 1px;
+				}
+
+					.club-articulo__tabla tr th{
+						border: solid 1px black;
+						padding: 1px;
+					}	
+
+					.club-articulo__tabla tr td{
+						border: solid 1px black;
+						padding: 1px;
+					}
+
+			.map{
+				width: 100%;
+				height: 50vh;
+			}

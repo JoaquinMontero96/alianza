@@ -1,0 +1,292 @@
+//media queries
+
+@media (min-width: 768px){
+
+	/*=========MQ GENERAL=========*/
+
+	hr{
+		display: none;
+	}
+
+	.header{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.nav{
+		flex-direction: row;
+		justify-content: space-evenly;
+		position: sticky;
+		top: -1px;
+		z-index: 100;
+		margin-bottom: 3rem;
+	}
+
+	.menu{
+		flex-direction: row;
+	}
+
+	.menu__link{
+		font-size: 1.6rem;
+		margin: 0 1rem;
+	}
+
+	.boton, .boton--black{
+		font-size: 1.8rem;
+	}
+
+	.sponsors{
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	/*=========MQ INDEX=========*/
+
+	.container-inicio{
+	grid-template-columns: 65% 35%;
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas: 
+	"header header"
+	"nav nav"
+	"hero hero"
+	"main aside"
+	"buy buy"
+	"footer footer"
+	;
+	}
+
+	.clash-torneo__div{
+		flex-direction: column;
+	}
+
+	/*=========MQ DEPORTES=========*/
+
+	.container-deportes{
+		grid-template-columns: 65% 35%;
+		grid-template-rows: repeat(5, auto);
+		grid-template-areas: 
+		"header header"
+		"nav nav"
+		"hero hero"
+		"main aside"
+		"footer footer"
+		;
+	}
+
+	/*=========MQ CLUB=========*/
+
+	.club-articulo--row{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.club-articulo__bloque{
+		width: 50%;
+	}
+
+	.map{
+		width: 50%;
+		height: 100vh;
+	}
+
+	/*=========MQ PRODUCTOS=========*/
+
+	.productos-categoria{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
+	}
+
+	.producto{
+		width: 40%;
+	}
+
+}
+
+@media (min-width: 1024px){
+
+	/*=========MQ GENERAL=========*/
+
+	.nav{
+		height: 6rem;
+	}
+
+	.nav__logo{
+		width: 8rem;
+	}
+
+	.boton--black{
+		color: #fff;
+		font-size: 2.2rem;
+		border: solid .4rem #fff;
+	}
+
+	.campeonatos{
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.torneo{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		width: 20vw;
+	}
+
+	.torneo--xl{
+		width: 50vw;
+	}
+
+	.torneo__title{
+		flex-basis: 100%;
+		text-align: center;
+		font-size: 1.6rem;
+		margin: 2rem 0;
+	}
+
+	.sponsors{
+		flex-wrap: nowrap;
+		margin: 2rem 0;
+		padding: 2rem;
+	}
+
+	.sponsors__img{
+		width: 15%;
+		margin: 0px;
+	}
+
+	/*=========MQ INDEX=========*/
+
+	.container-inicio{
+		grid-template-columns: 70% 30%;
+	}
+
+	.noticias{
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: flex-start;
+	}
+
+	.noticia{
+		width: 45%;
+	}
+
+	.aside{
+		justify-content: space-evenly;
+	}
+
+	.clash-torneo__div{
+		flex-direction: row;
+	}
+
+	.buy{
+		position: relative;
+	}
+
+	.buy__img{
+		filter: brightness(0.25);
+	}
+
+	.camiseta{
+		position: absolute;
+		top: 50%;
+		margin: 0;
+		transform: translateY(-50%);
+	}
+
+	.camiseta__txt{
+		color: #fff;
+	}
+
+	/*=========MQ HISTORIA=========*/
+
+	.historia-bloque{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+	.historia-bloque__title{
+		padding: 1rem;
+		font-size: 2.5rem;
+		width: 100%;
+	}
+
+	.posiciones__tabla{
+		font-size: 2.2rem;
+	}
+
+	.fixture__tabla{
+		font-size: 2.2rem;
+	}
+
+	/*=========MQ DEPORTES=========*/
+
+	.container-deportes{
+		grid-template-columns: 70% 30%;
+	}
+
+	/*=========MQ CLUB=========*/
+
+	.map{
+		padding: 5rem;
+	}
+
+	/*=========MQ PRODUCTOS=========*/
+
+	.producto{
+		width: 28%;
+	}
+
+}
+
+@media (min-width: 1200px){
+
+	/*=========MQ GENERAL=========*/
+
+	.header{
+		padding: 0 20%;
+	}
+
+	.redes-sociales__icon{
+		width: 2.2rem;
+	}
+
+	.nav{
+		padding: 0 10%;
+	}
+
+	.torneo--xl{
+		width: 50%;
+	}
+
+	/*=========MQ INDEX=========*/
+
+	.container-inicio{
+		grid-template-columns: 75% 25%;
+	}
+
+	.noticia{
+		width: 30%;
+	}
+
+	.noticia__title{
+		font-size: 1.8rem;
+	}
+
+	.main__video{
+		display: inline-block;
+	}
+
+	/*=========MQ PRODUCTOS=========*/
+
+	.producto{
+		margin: 1rem;
+		width: 18%;
+	}
+}

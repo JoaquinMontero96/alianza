@@ -1,0 +1,77 @@
+.footer{
+	grid-area: footer;
+	background: linear-gradient(105deg, #79c8e6 0, #65bcde 50%, #4fb1d6 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+	.campeonatos{
+
+	}
+
+		.torneo{
+			display: none;
+		}
+
+			.torneo__title{
+				color: #fff;
+			}
+
+			.trofeo{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+				.trofeo__img{
+					width: 4vw;
+					height: auto;
+				}
+
+				.trofeo__txt{
+					color: #fff;
+				}
+
+	.sponsors{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2rem 0;
+	}
+
+		.sponsors__img{
+			width: 20rem;
+			height: auto;
+			margin: 1.5rem 2rem; 
+		}
+
+	.footer-info{
+		margin: 2rem;
+	}
+
+		.footer-info__txt{
+			color: #fff;
+			text-align: center;
+			font-size: 1.8rem;
+			font-weight: 300;
+			margin: 1rem 0;
+		}
+
+	.return-button{}
+
+		.return-button__img{
+			width: 6rem;
+			height: auto;
+			position: fixed;
+			bottom: 2%;
+			right: 2%;
+			opacity: 50%;
+			transition: transform .4s ease;
+		}
+
+		.return-button__img:hover{
+			opacity: 100%;
+			transform: translateY(-5px);
+		}

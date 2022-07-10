@@ -1,0 +1,94 @@
+//nav 
+.nav{
+	grid-area: nav;
+	background: linear-gradient(105deg, #98354c 0, #8e2645 50%, #84143f 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: .5rem 0;
+	margin: 2rem 0;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+	.nav__link{}
+
+		.nav__logo{
+			width: 5rem;
+			height: auto;
+			transition: .4s ease;
+			filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+		}
+
+		.nav__logo:hover{
+			transform: scale(1.03);
+		}
+
+	.menu{
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+	}
+
+		.menu__item{
+			text-align: center;
+			margin: .5rem 0;
+		}
+
+			.menu__link{
+				color: #fff;
+				font-size: 2rem;
+				font-weight: 500;
+				background-image: linear-gradient(currentColor, currentColor);
+				background-position: 0% 100%;
+				background-repeat: no-repeat;
+				background-size: 0% 2px;
+				transition: .4s;
+			}
+
+			.menu__link:hover{
+				color: #66BCDE;
+				background-size: 100% 2px;
+			}
+
+	.boton{
+		color: #fff;
+		font-size: 2.2rem;
+		font-weight: 800;
+		border: solid .4rem #fff;
+		padding: .5rem .8rem;
+		margin: .8rem;
+		transition: .4s ease;
+	}
+
+	.boton:hover{
+		background: #66BCDE;
+	}
+
+	.nav__decoration{
+		display: none;
+	}
+
+	.navbar-toggler{
+		border: solid 1px rgba(0, 0, 0, 0);
+	}
+
+	.navbar-toggler-icon{
+		background-image: url(../images/hmb.png);
+		width: 30px;
+		height: 30px;
+	}
+
+	.btn{
+		border: solid 2px white;
+		color: white;
+		font-size: 1.6rem;
+	}
+
+	.btn:hover{
+		border: solid 2px #66BCDE;
+		color: #66BCDE;
+	}
+
+	.form-control{
+		font-size: 1.6rem;
+	}

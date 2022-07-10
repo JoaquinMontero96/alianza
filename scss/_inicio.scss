@@ -1,0 +1,199 @@
+//index
+
+.container-inicio{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(7, auto);
+	grid-template-areas: 
+	"header"
+	"nav"
+	"hero"
+	"aside"
+	"main"
+	"buy"
+	"footer"
+	;
+}
+
+.aside{
+	grid-area: aside;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: -3px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+	.aside__title{
+		font-size: 2rem;
+		padding: 0 6rem;
+	}
+
+	.clash{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+		.clash__title{
+			font-size: 2rem;
+			background: #66BCDE;
+			color: #fff;
+			padding: .5rem;
+		}
+
+		.clash-torneo{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 2rem 0;
+		}
+
+			.clash-torneo__title{
+				font-size: 2rem;
+				color: #3B3B3B;
+				margin: 1rem 0;
+				padding: .5rem;
+				text-align: center;
+				font-weight: 600;
+			}
+
+			.clash-torneo__div{
+				display: flex;
+				align-items: center;
+			}
+
+			.clash-torneo__txt{
+				font-size: 2rem;
+				font-weight: 300;
+				color: #3B3B3B;
+			}
+
+			.team{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+				.team__logo{
+					width: 8rem;
+					height: auto;
+					margin: 1rem 2rem;
+				}
+
+				.team__txt{
+					font-size: 2rem;
+					font-weight: 800;
+					color: #3B3B3B;
+					margin-bottom: 2rem;
+					text-align: center;
+				}
+
+	.publicidad{}
+
+		.publicidad__img{
+			width: 100%;
+			height: auto;
+		}
+
+.main{
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(../images/pasillo.jpg);
+    background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+	.main__title{
+		width: 100%;
+	}
+
+	.noticias{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+		.noticia{
+			width: 90%;
+			padding-bottom: 1rem;
+			background: #fff;
+			margin: 1rem 0;
+		}
+
+			.noticia__img{
+				width: 100%;
+				border-top-left-radius: 1rem;
+				border-top-right-radius: 1rem;
+			}
+
+			.noticia__title{
+				padding: .5rem;
+			}
+
+			.noticia__txt{
+				text-align: center;
+				font-size: 1.5rem;
+				padding: 1.5rem;
+			}
+
+	.main__video{
+		width: 95%;
+		height: auto;
+		margin: 2rem;
+		border-radius: 2rem;
+		display: none;
+	}
+
+.buy{
+	grid-area: buy;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.buy__img{
+		width: 100%;
+		height: auto;
+	}
+
+	.camiseta{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2rem 0;
+	}
+
+		.camiseta__txt{
+			text-align: center;
+			font-size: 3rem;
+			color: #3B3B3B;
+			font-weight: 800;
+			padding: 0 2rem;
+		}
+
+		.camiseta__icon{
+			width: 20rem;
+			height: auto;
+			margin: 1rem;
+		}
+
+		.boton--black{
+			color: #3B3B3B;
+			font-weight: 800;
+			border: solid .4rem #3B3B3B;
+			font-size: 2.2rem;
+			padding: .5rem .8rem;
+			margin: .8rem;
+			transition: .4s ease;
+			text-decoration: none;
+		}
+
+		.boton--black:hover{
+			cursor: pointer;
+			background: #66BCDE;
+			color: #fff;
+		}
