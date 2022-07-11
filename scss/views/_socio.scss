@@ -1,0 +1,65 @@
+//socios
+
+.container-socio{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"header"
+	"nav"
+	"hero"
+	"main"
+	"footer"
+	;
+}
+
+.socio{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(../images/pasillob.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	&__decoration{
+		width: 15vw;
+	}
+}
+
+.formulario{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: $blanco;
+	&-campo{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 70vw;
+		padding: 2rem;
+		&__titulo{
+			font-size: $textSm;
+			text-transform: uppercase;
+			font-weight: $extraBold;
+		}
+		&__label{
+			font-size: $textXxs;
+			margin: .5rem 0;
+		}
+		&__input{
+			font-size: $textXxs;
+			margin: .5rem 0;
+		}
+		&__select{
+			font-size: $textXxs;
+			margin: .5rem 0;
+		}
+		&__option{
+			font-size: $textXxs;
+		}
+	}
+}

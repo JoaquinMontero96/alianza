@@ -1,0 +1,97 @@
+//deportes
+
+.container-deportes{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas: 
+	"header"
+	"nav"
+	"hero"
+	"main"
+	"aside"
+	"footer"
+	;
+}
+
+.deporte{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 3rem;
+	&-encabezado{
+		width: 100%;
+		&__title{
+			padding: 1rem;
+			font-size: $textXl;
+			width: 100%;
+		}
+		&__torneo{
+			text-align: center;
+			font-size: $textSm;
+		}
+	}
+}
+
+.posiciones{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__title{
+		padding: 1rem;
+		font-size: $textXl;
+		width: 100%;
+		background: $celeste;
+	}
+	&__tabla{
+		text-align: center;
+		font-size: $textXxxs;
+		border: solid 1px black;
+		border-collapse: collapse;
+		tr{
+			padding: 1px;
+			th{
+				border: solid 1px black;
+				padding: 1px;
+			}
+			td{
+				border: solid 1px black;
+				padding: 1px;
+			}
+		}
+	}		
+}
+
+.fixture{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__title{
+		padding: 1rem;
+		font-size: $textXl;
+		width: 100%;
+		background: $celeste;
+	}
+	&__tabla{
+		text-align: center;
+		font-size: $textXxxs;
+		border: solid 1px black;
+		border-collapse: collapse;
+		tr{
+			padding: 1px;
+			th{
+				border: solid 1px black;
+				padding: 1px;
+			}
+			td{
+				border: solid 1px black;
+				padding: 1px;
+			}
+		}
+	}
+}
+
+	

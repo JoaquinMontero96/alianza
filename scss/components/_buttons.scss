@@ -1,0 +1,83 @@
+//buttons
+
+.boton--black{
+	color: $gris;
+	font-weight: $extraBold;
+	border: solid .4rem $gris;
+	font-size: $textMd;
+	padding: .5rem .8rem;
+	margin: .8rem;
+	transition: .4s ease;
+	text-decoration: none;
+	&:hover{
+		cursor: pointer;
+		background: $celeste;
+		color: $blanco;
+	}
+}
+
+.boton--buy{
+	color: $gris;
+	font-weight: $extraBold;
+	border: solid .4rem $gris;
+	font-size: $textMd;
+	padding: .5rem .8rem;
+	margin: .8rem;
+	transition: .4s ease;
+	&:hover{
+		cursor: pointer;
+		background: $celeste;
+		color: $blanco;
+	}
+}
+
+.return-button{
+	&__img{
+		width: 6rem;
+		height: auto;
+		position: fixed;
+		bottom: 2%;
+		right: 2%;
+		opacity: 50%;
+		transition: transform .4s ease;
+		&:hover{
+			opacity: 100%;
+			transform: translateY(-5px);
+		}
+	}
+}
+
+.boton{
+	color: $blanco;
+	font-size: $textMd;
+	font-weight: $extraBold;
+	border: solid .4rem $blanco;
+	padding: .5rem .8rem;
+	margin: .8rem;
+	transition: .4s ease;
+	&:hover{
+		background: $celeste;
+	}
+}
+
+//bootstrap
+
+.btn{
+	border: solid 2px $blanco;
+	color: $blanco;
+	font-size: $textXxs;
+	&:hover{
+		border: solid 2px $celeste;
+		color: $celeste;
+	}
+}
+
+.navbar-toggler{
+	border: solid 1px rgba(0, 0, 0, 0);
+}
+
+.navbar-toggler-icon{
+	background-image: url(../images/hmb.png);
+	width: 30px;
+	height: 30px;
+}

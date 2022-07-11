@@ -2,10 +2,7 @@
 .hero{
 	grid-area: hero;
 	position: relative;
-}
-
-	.hero__media{
+	&__media{
 		width: 100%;
 	}
-
-	.hero__txt{}
+}

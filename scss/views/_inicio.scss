@@ -1,0 +1,168 @@
+//index
+
+.container-inicio{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(7, auto);
+	grid-template-areas: 
+	"header"
+	"nav"
+	"hero"
+	"aside"
+	"main"
+	"buy"
+	"footer"
+	;
+}
+
+.aside{
+	grid-area: aside;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: -3px 0 15px rgba(0, 0, 0, 0.3);
+	&__title{
+		font-size: $textSm;
+		padding: 0 6rem;
+	}
+}
+
+.clash{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__title{
+		font-size: $textSm;
+		background: $celeste;
+		color: $blanco;
+		padding: .5rem;
+	}
+	&-torneo{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2rem 0;
+		&__title{
+			font-size: $textSm;
+			color: $gris;
+			margin: 1rem 0;
+			padding: .5rem;
+			text-align: center;
+			font-weight: $semiBold;
+		}
+
+		&__div{
+			display: flex;
+			align-items: center;
+		}
+
+		&__txt{
+			font-size: $textSm;
+			font-weight: $light;
+			color: $gris;
+		}
+	}
+}
+
+.team{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__logo{
+		width: 8rem;
+		height: auto;
+		margin: 1rem 2rem;
+	}
+	&__txt{
+		font-size: $textSm;
+		font-weight: $extraBold;
+		color: $gris;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+}
+	
+.publicidad{
+	&__img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.main{
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(../images/pasillo.jpg);
+    background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__title{
+		width: 100%;
+	}
+	&__video{
+		width: 95%;
+		height: auto;
+		margin: 2rem;
+		border-radius: 2rem;
+		display: none;
+	}
+}
+
+.noticias{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.noticia{
+	width: 90%;
+	padding-bottom: 1rem;
+	background: $blanco;
+	margin: 1rem 0;
+	&__img{
+		width: 100%;
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
+	}
+	&__title{
+		padding: .5rem;
+	}
+	&__txt{
+		text-align: center;
+		font-size: $textXxs;
+		padding: 1.5rem;
+	}
+}
+	
+.buy{
+	grid-area: buy;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.camiseta{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem 0;
+	&__txt{
+		text-align: center;
+		font-size: $textXxl;
+		color: $gris;
+		font-weight: $extraBold;
+		padding: 0 2rem;
+	}
+	&__icon{
+		width: 20rem;
+		height: auto;
+		margin: 1rem;
+	}
+}
