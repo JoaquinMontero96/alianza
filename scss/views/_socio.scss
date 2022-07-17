@@ -14,9 +14,7 @@
 }
 
 .socio{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column, center, center);
 	background-image: url(../images/pasillob.jpg);
 	background-position: center;
 	background-attachment: fixed;
@@ -29,15 +27,11 @@
 }
 
 .formulario{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column, center, center);
 	text-align: center;
-	color: $blanco;
+	color: map-get($map:$paleta, $key:'blanco');
 	&-campo{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include flex(column, center, center);
 		text-align: center;
 		width: 70vw;
 		padding: 2rem;

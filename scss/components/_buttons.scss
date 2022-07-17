@@ -1,33 +1,34 @@
 //buttons
 
-.boton--black{
-	color: $gris;
-	font-weight: $extraBold;
-	border: solid .4rem $gris;
-	font-size: $textMd;
+.boton{
+	@include texto($textMd, $extraBold, map-get($map:$paleta, $key:'blanco'));
+	border: solid .4rem map-get($map:$paleta, $key:'blanco');
 	padding: .5rem .8rem;
 	margin: .8rem;
 	transition: .4s ease;
+	&:hover{
+		background: map-get($map:$paleta, $key:'celeste');
+	}
+}
+
+.boton--black{
+	@extend .boton;
+	color: map-get($map:$paleta, $key:'gris');
+	border: solid .4rem map-get($map:$paleta, $key:'gris');
 	text-decoration: none;
 	&:hover{
 		cursor: pointer;
-		background: $celeste;
-		color: $blanco;
+		color: map-get($map:$paleta, $key:'blanco');
 	}
 }
 
 .boton--buy{
-	color: $gris;
-	font-weight: $extraBold;
-	border: solid .4rem $gris;
-	font-size: $textMd;
-	padding: .5rem .8rem;
-	margin: .8rem;
-	transition: .4s ease;
+	@extend .boton;
+	color: map-get($map:$paleta, $key:'gris');
+	border: solid .4rem map-get($map:$paleta, $key:'gris');
 	&:hover{
 		cursor: pointer;
-		background: $celeste;
-		color: $blanco;
+		color: map-get($map:$paleta, $key:'blanco');
 	}
 }
 
@@ -47,28 +48,15 @@
 	}
 }
 
-.boton{
-	color: $blanco;
-	font-size: $textMd;
-	font-weight: $extraBold;
-	border: solid .4rem $blanco;
-	padding: .5rem .8rem;
-	margin: .8rem;
-	transition: .4s ease;
-	&:hover{
-		background: $celeste;
-	}
-}
-
 //bootstrap
 
 .btn{
-	border: solid 2px $blanco;
-	color: $blanco;
+	border: solid 2px map-get($map:$paleta, $key:'blanco');
+	color: map-get($map:$paleta, $key:'blanco');
 	font-size: $textXxs;
 	&:hover{
-		border: solid 2px $celeste;
-		color: $celeste;
+		border: solid 2px map-get($map:$paleta, $key:'celeste');
+		color: map-get($map:$paleta, $key:'celeste');
 	}
 }
 

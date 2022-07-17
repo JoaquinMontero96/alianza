@@ -1,5 +1,25 @@
-//colores
-$bordo: #8e2745;
-$celeste: #66BCDE;
-$blanco: #F6F8F8;
-$gris: #3B3B3B;
+//maps
+$paleta: (
+	'bordo': #8e2745,
+	'celeste': #66BCDE,
+	'blanco': #F6F8F8,
+	'gris': #3B3B3B,
+	);
+
+
+//mixins
+@mixin texto($font-size, $font-weight, $color){
+	//@include texto(2rem, 300, black);
+	font-family: $mainFont;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	color: $color;
+}
+
+@mixin flex($direction, $justify, $align){
+	//@include flex(row, center, end);
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}

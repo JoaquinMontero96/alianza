@@ -119,9 +119,9 @@
 	
 
 	.boton--black{
-		color: $blanco;
+		color: map-get($map:$paleta, $key:'blanco');
 		font-size: $textMd;
-		border: solid .4rem $blanco;
+		border: solid .4rem map-get($map:$paleta, $key:'blanco');
 	}
 
 	.campeonatos{
@@ -196,7 +196,7 @@
 		margin: 0;
 		transform: translateY(-50%);
 		&__txt{
-			color: $blanco;
+			color: map-get($map:$paleta, $key:'blanco');
 		}
 	}
 

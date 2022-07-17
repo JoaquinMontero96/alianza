@@ -15,40 +15,33 @@ html{
 }
 
 h1{
-	font-weight: $light;
+	@include texto($textXxs, $light, map-get($map:$paleta, $key:'gris'));
 	letter-spacing: .3rem;
-	font-size: $textXxs;
 	text-align: center;
 	margin: 1.5rem;
 }
 
 h2{
-	color: $blanco;
-	font-size: 8vw;
+	@include texto(8vw, $extraBlack, map-get($map:$paleta, $key:'blanco'));
 	text-align: center;
 	position: absolute;
 	top: 50%;
 	right: 50%;
 	transform: translate(50%, -50%);
-	font-weight: $extraBlack;
 	width: 100%;
 }
 
 h3{
-	background: $bordo;
-	color: $blanco;
+	@include texto($textXxxl, $extraBlack, map-get($map:$paleta, $key:'blanco'));
+	background: map-get($map:$paleta, $key:'bordo');
 	text-align: center;
-	font-weight: $extraBlack;
-	font-size: $textXxxl;
 	margin: 2rem 0;
 	box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 h4{
+	@include texto($textLg, $extraBold, map-get($map:$paleta, $key:'gris'));
 	text-align: center;
 	text-transform: uppercase;
-	font-size: $textLg;
-	color: $gris;
 	margin: 1rem 0;
-	font-weight: $extraBold;
 }

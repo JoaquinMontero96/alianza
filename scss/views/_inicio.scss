@@ -16,10 +16,8 @@
 }
 
 .aside{
+	@include flex(column, center, center);
 	grid-area: aside;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	box-shadow: -3px 0 15px rgba(0, 0, 0, 0.3);
 	&__title{
 		font-size: $textSm;
@@ -28,27 +26,21 @@
 }
 
 .clash{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column, center, center);
 	&__title{
 		font-size: $textSm;
-		background: $celeste;
-		color: $blanco;
+		background: map-get($map:$paleta, $key:'celeste');
+		color: map-get($map:$paleta, $key:'blanco');
 		padding: .5rem;
 	}
 	&-torneo{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include flex(column, center, center);
 		margin: 2rem 0;
 		&__title{
-			font-size: $textSm;
-			color: $gris;
+			@include texto($textSm, $semiBold, map-get($map:$paleta, $key:'gris'));
 			margin: 1rem 0;
 			padding: .5rem;
 			text-align: center;
-			font-weight: $semiBold;
 		}
 
 		&__div{
@@ -57,26 +49,20 @@
 		}
 
 		&__txt{
-			font-size: $textSm;
-			font-weight: $light;
-			color: $gris;
+			@include texto($textSm, $light, map-get($map:$paleta, $key:'gris'));
 		}
 	}
 }
 
 .team{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column, center, center);
 	&__logo{
 		width: 8rem;
 		height: auto;
 		margin: 1rem 2rem;
 	}
 	&__txt{
-		font-size: $textSm;
-		font-weight: $extraBold;
-		color: $gris;
+		@include texto($textSm, $extraBold, map-get($map:$paleta, $key:'gris'));
 		margin-bottom: 2rem;
 		text-align: center;
 	}
@@ -90,10 +76,8 @@
 }
 
 .main{
+	@include flex(column, center, center);
 	grid-area: main;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	background-image: url(../images/pasillo.jpg);
     background-position: center;
 	background-attachment: fixed;
@@ -112,15 +96,13 @@
 }
 
 .noticias{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column, center, center);
 }
 
 .noticia{
 	width: 90%;
 	padding-bottom: 1rem;
-	background: $blanco;
+	background: map-get($map:$paleta, $key:'blanco');
 	margin: 1rem 0;
 	&__img{
 		width: 100%;
@@ -138,10 +120,8 @@
 }
 	
 .buy{
+	@include flex(column, center, center);
 	grid-area: buy;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	&__img{
 		width: 100%;
 		height: auto;
@@ -149,15 +129,11 @@
 }
 
 .camiseta{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column, center, center);
 	margin: 2rem 0;
 	&__txt{
+		@include texto($textXxl, $extraBold, map-get($map:$paleta, $key:'gris'));
 		text-align: center;
-		font-size: $textXxl;
-		color: $gris;
-		font-weight: $extraBold;
 		padding: 0 2rem;
 	}
 	&__icon{

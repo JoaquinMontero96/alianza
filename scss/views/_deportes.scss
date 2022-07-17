@@ -15,9 +15,7 @@
 }
 
 .deporte{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column, center, center);
 	width: 100%;
 	margin-bottom: 3rem;
 	&-encabezado{
@@ -35,15 +33,13 @@
 }
 
 .posiciones{
+	@include flex(column, center, center);
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	&__title{
 		padding: 1rem;
 		font-size: $textXl;
 		width: 100%;
-		background: $celeste;
+		background: map-get($map:$paleta, $key:'celeste');
 	}
 	&__tabla{
 		text-align: center;
@@ -65,15 +61,13 @@
 }
 
 .fixture{
+	@include flex(column, center, center);
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	&__title{
 		padding: 1rem;
 		font-size: $textXl;
 		width: 100%;
-		background: $celeste;
+		background: map-get($map:$paleta, $key:'celeste');
 	}
 	&__tabla{
 		text-align: center;

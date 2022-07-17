@@ -1,10 +1,8 @@
 //nav 
 .nav{
+	@include flex(column, space-between, center);
 	grid-area: nav;
 	background: linear-gradient(105deg, #98354c 0, #8e2645 50%, #84143f 100%);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	padding: .5rem 0;
 	margin: 2rem 0;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
@@ -24,24 +22,21 @@
 }
 
 .menu{
-	display: flex;
-	flex-direction: column;
+	@include flex(column, center, center);
 	list-style: none;
 	&__item{
 		text-align: center;
 		margin: .5rem 0;
 	}
 	&__link{
-		color: $blanco;
-		font-size: $textSm;
-		font-weight: $medium;
+		@include texto($textSm, $medium, map-get($map:$paleta, $key:'blanco'));
 		background-image: linear-gradient(currentColor, currentColor);
 		background-position: 0% 100%;
 		background-repeat: no-repeat;
 		background-size: 0% 2px;
 		transition: .4s;
 		&:hover{
-			color: $celeste;
+			color: map-get($map:$paleta, $key:'celeste');
 			background-size: 100% 2px;
 		}
 	}

@@ -14,14 +14,10 @@
 }
 
 .historia{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flex(column, center, center);
 	padding-bottom: 5rem;
 	&-bloque{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include flex(column, center, center);
 		&__title{
 			padding: 1rem;
 			font-size: $textXl;
@@ -39,7 +35,7 @@
 			font-size: $textXxs;
 			text-align: justify;
 			padding: 2rem;
-			color: $gris;
+			color: map-get($map:$paleta, $key:'gris');
 		}
 	}
 }
