@@ -78,7 +78,7 @@
 .main{
 	@include flex(column, center, center);
 	grid-area: main;
-	background-image: url(../images/pasillo.jpg);
+	background-image: url(../images/pasillo.webp);
     background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;

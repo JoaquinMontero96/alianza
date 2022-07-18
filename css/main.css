@@ -296,7 +296,7 @@ h4 {
   justify-content: center;
   align-items: center;
   grid-area: main;
-  background-image: url(../images/pasillo.jpg);
+  background-image: url(../images/pasillo.webp);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -562,7 +562,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/pasillob.jpg);
+  background-image: url(../images/pasillob.webp);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
