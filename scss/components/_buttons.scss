@@ -26,6 +26,7 @@
 	@extend .boton;
 	color: map-get($map:$paleta, $key:'gris');
 	border: solid .4rem map-get($map:$paleta, $key:'gris');
+	text-decoration: none;
 	&:hover{
 		cursor: pointer;
 		color: map-get($map:$paleta, $key:'blanco');

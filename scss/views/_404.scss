@@ -1,0 +1,15 @@
+.container-404{
+	@include flex(column, center, center);
+	width: 100vw;
+	height: 100vh;
+}
+
+.txt404{
+	@include texto($textMd, $semiBold, map-get($map:$paleta, $key:'gris'));
+	margin: 3rem 0;	
+}
+
+.img404{
+	width: 20rem;
+	height: auto;
+}
