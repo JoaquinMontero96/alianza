@@ -35,6 +35,7 @@
 		background-repeat: no-repeat;
 		background-size: 0% 2px;
 		transition: .4s;
+		display: inline-block;
 		&:hover{
 			color: map-get($map:$paleta, $key:'celeste');
 			background-size: 100% 2px;

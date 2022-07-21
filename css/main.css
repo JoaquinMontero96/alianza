@@ -160,7 +160,8 @@ h4 {
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
-    transition: .4s; }
+    transition: .4s;
+    display: inline-block; }
     .menu__link:hover {
       color: #66BCDE;
       background-size: 100% 2px; }
@@ -568,8 +569,6 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%; }
-  .socio__decoration {
-    width: 15vw; }
 
 .formulario {
   display: flex;
@@ -577,7 +576,9 @@ h4 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #F6F8F8; }
+  color: #3B3B3B;
+  padding: 3rem 0;
+  background: #F6F8F8; }
   .formulario-campo {
     display: flex;
     flex-direction: column;

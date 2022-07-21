@@ -21,15 +21,14 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	&__decoration{
-		width: 15vw;
-	}
 }
 
 .formulario{
 	@include flex(column, center, center);
 	text-align: center;
-	color: map-get($map:$paleta, $key:'blanco');
+	color: map-get($map:$paleta, $key:'gris');
+	padding: 3rem 0;
+	background: map-get($map:$paleta, $key:'blanco');
 	&-campo{
 		@include flex(column, center, center);
 		text-align: center;
